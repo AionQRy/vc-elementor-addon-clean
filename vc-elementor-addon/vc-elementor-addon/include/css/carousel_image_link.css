@@ -1,0 +1,47 @@
+#carousel_image_link{
+position: relative;
+}
+#carousel_image_link svg {
+    width: 40px;
+    height: 40px;
+    stroke: #ddd;
+}
+#carousel_image_link .swiper-button-next,
+#carousel_image_link .swiper-button-prev {
+    width: 40px;
+    background-image: none;
+    height: 40px;
+}
+#carousel_image_link .swiper-button-prev:after,
+#carousel_image_link .swiper-button-next:after{
+  display: none;
+}
+#carousel_image_link.outside_arrow{
+  position: static;
+  width: calc(100% - 65px);
+}
+#carousel_image_link.outside_arrow .swiper-button-prev {
+    left: -3px;
+}
+#carousel_image_link.outside_arrow .swiper-button-next {
+    right: -3px;
+}
+#carousel_image_link.outside_pagination .swiper-wrapper {
+    padding-bottom:60px;
+}
+#carousel_image_link.outside_pagination .vc-swiper-button {
+    top: calc(50% - 30px / 2);
+}
+#carousel_image_link .swiper-slide img {
+    width: 100%;
+    -o-transition: all 1.5s ease;
+  transition: all 1.5s ease;
+  -webkit-transition: all 1.5s ease;
+  -moz-transition: all 1.5s ease;
+  -ms-transition: all 1.5s ease;
+}
+#carousel_image_link .swiper-slide a{
+  display: block;
+  overflow: hidden;
+  line-height: 0;
+}
